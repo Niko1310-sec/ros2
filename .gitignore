@@ -1,0 +1,22 @@
+# ROS 2 build artifacts
+build/
+install/
+log/
+
+# Python specific ignores
+__pycache__/
+*.pyc
+.Python
+.pytest_cache/
+.env
+venv/
+*.egg-info/
+
+# IDE ignores (optional)
+.vscode/
+.idea/
+
+# Other common ignores
+.DS_Store # macOS
+*~        # Emacs/Vim temporary files
+*.bak
