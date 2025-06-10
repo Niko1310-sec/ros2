@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "test_node = mypkg.first:main"
+            "test_node = mypkg.first:main",
+            "drawcircle = mypkg.drawcircle:main"
         ],
     },
 )
