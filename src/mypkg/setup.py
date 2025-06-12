@@ -21,7 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
             "test_node = mypkg.first:main",
-            "drawcircle = mypkg.drawcircle:main"
+            "drawcircle = mypkg.drawcircle:main",
+            "pose_sub = mypkg.pose_sub:main"
         ],
     },
 )
