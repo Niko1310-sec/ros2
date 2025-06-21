@@ -10,8 +10,9 @@ class Mynode(Node): # inherits from the node
         self.create_timer(1.0, self.timer_callback) # timer callback
 
     def timer_callback(self):
-        self.get_logger().info("Hello " + str(self.counter_))
         self.counter_ += 1
+        self.get_logger().info("Hello " + str(self.counter_))
+        
 
 def main(args=None):
     rclpy.init(args=args) #initializing ros2 communications
