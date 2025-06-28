@@ -1,8 +1,6 @@
 from setuptools import find_packages, setup
-from glob import glob
-import os
 
-package_name = 'lifecycle'
+package_name = 'actions'
 
 setup(
     name=package_name,
@@ -12,7 +10,6 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.py')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -23,8 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "lifecycle_node = lifecycle.lifecycle_test:main",
-            "lifecycle_manager = lifecycle.lifecycle_controller:main",
+            'count_until_server = actions.count_server:main',
+            'count_until_client = actions.count_client:main'
         ],
     },
 )

@@ -6,7 +6,7 @@ from example_interfaces.msg import Int64
 class Mynode(LifecycleNode):
 
     def __init__(self):
-        super().__init__("lifecycle_node")
+        super().__init__("lifecyclenode")
         self.get_logger().info("IN on_constructor")
         self.pub_ = None
         self.timer_ = None

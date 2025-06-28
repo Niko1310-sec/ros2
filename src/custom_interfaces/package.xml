@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>custom_interfaces</name>
+  <version>0.0.0</version>
+  <description>Custom interfaces package</description>
+
+  <maintainer email="mes.charan@gmail.com">charan</maintainer>
+  <license>Apache License 2.0</license>
+
+  <!-- Build tools -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>rosidl_default_generators</buildtool_depend>
+
+  <!-- Dependencies -->
+  <build_depend>geometry_msgs</build_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+
+  <build_depend>rosidl_default_runtime</build_depend>
+  <exec_depend>rosidl_default_runtime</exec_depend>
+
+  <!-- Interface group membership -->
+  <member_of_group>rosidl_interface_packages</member_of_group>
+
+  <!-- Testing (optional) -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <!-- Export -->
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
